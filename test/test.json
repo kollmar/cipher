@@ -1,0 +1,17 @@
+{
+    "customfields_indeed_phone": "optional",
+    "customfields_indeed_coverletter": "optional",
+    "customfields_indeed_resume": "optional",
+    "customfields_indeed_resumefieldsrequired": [
+        "phone",
+        "gender",
+        "dateOfBirth"
+    ],
+    "customfields_indeed_resumeoptional": [
+        "language",
+        "education",
+        "locaiton"
+    ],
+    "customfields_indeed_name": "fullname",
+    "mail": "john.doe@example.com"
+}
