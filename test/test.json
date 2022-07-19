@@ -7,10 +7,10 @@
         "gender",
         "dateOfBirth"
     ],
-    "customfields_indeed_resumeoptional": [
-        "language",
+    "customfields_indeed_resumefieldsoptional": [
+        "languages",
         "education",
-        "locaiton"
+        "location"
     ],
     "customfields_indeed_name": "fullname",
     "mail": "john.doe@example.com"
