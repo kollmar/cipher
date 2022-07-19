@@ -6,6 +6,7 @@ const testing = new Cipher(key, e_mail);
 
 const encrypted = testing.encrypt();
 const hex_encrypted = encrypted.toHex();
+const decrypted = testing.decrypt();
 
 console.log(hex_encrypted);
 if (hex_encrypted !== test_checkHexValue) {
@@ -16,8 +17,6 @@ if (hex_encrypted !== test_checkHexValue) {
 	});
 }
 
-const decrypted = testing.decrypt();
-
 if (decrypted.data !== e_mail) {
 	console.log('invalid decrypted value!');
 	console.table({
@@ -26,4 +25,6 @@ if (decrypted.data !== e_mail) {
 	});
 }
 
-console.table({ test_content: e_mail, decrypt: decrypted.data });
+console.table(testing);
+console.table({ test_content: e_mail, encrypt: hex_encrypted });
+console.table({ test_content: hex_encrypted, decrypt: decrypted.data });
